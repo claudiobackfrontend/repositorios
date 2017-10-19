@@ -1,0 +1,43 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+
+#box {
+  display: box;                   /* As specified */ 
+  display: -moz-box;              /* Mozilla */
+  display: -webkit-box;           /* WebKit */
+	
+  /*
+Fazer esse box mais alto do que as crianças,
+      para que haja espaço para a box-pack*/
+  height: 400px;           
+	
+  /* Fazer esse box mais largo do que as crianças
+      para que haja espaço para a box-align */
+  width: 100%;
+ 
+  background-color:#FF0; 
+
+  /* Box Filho devem ser orientadas verticalmente */
+  box-orient: vertical;           /* As specified */
+  -moz-box-orient: vertical;      /* Mozilla */
+  -webkit-box-orient: vertical;   /* WebKit */
+
+  /* Alinha o Box Filho fazendo a leitura horizontal do Box Pai */
+  box-align: center;               /* As specified */
+  -moz-box-align: center;            /* Mozilla */
+  -webkit-box-align: center;     /* WebKit */
+	
+  /* Linha o Pacote Box Filho fazendo a leitura Vertical do Box Pai */
+  box-pack: center;                 /* As specified */
+  -moz-box-pack: center;              /* Mozilla */
+  -webkit-box-pack: center;        /* WebKit */
+}
+
+/* Box-Filho mais estreito do que o seu Box-Pai,
+      para que haja espaço para a caixa-align */ 
+.tabela {
+  width: 40%;
+  background-color:#0FF;
+}
